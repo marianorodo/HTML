@@ -1,0 +1,154 @@
+/* prueba */
+* { margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+header {    height: 150px;
+            background-image:url("https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2013/11/Wallpaper-Monta%C3%B1as.jpg?resize=1200%2C800&quality=50&strip=all&ssl=1") ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+} 
+
+header:hover { height: 600px;
+               transition: 2s; 
+               
+}
+
+ button { width: 60px;
+          height: 25px;  
+          cursor: pointer;
+          margin-right: 20px;
+          
+}
+
+button:hover { width: 70px;
+               height: 30px;
+               background-color: grey; 
+               color: red;
+               box-shadow: 1px 2px 2px;
+               transition: 1s;    
+}
+
+nav { margin: 25px;
+      color: white;
+      
+}
+
+
+a { color: white;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+a:hover { color: rgb(212, 22, 22);
+          font-size: xxx-large;
+          transition: 1s;
+}
+
+main { background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(170,102,214,1) 27%, rgba(8,28,133,1) 38%, rgba(6,28,169,0.5914740896358543) 70%, rgba(0,212,255,1) 100%); 
+       width: 100%;
+}
+.cont { 
+       min-height: 80vh;
+       height: auto; 
+       display: grid; 
+       grid-template-columns: repeat(3, 1fr);
+       justify-items: center;
+       align-items: center;
+       gap: 10px;   
+       
+}
+
+h1 { font-size: xxx-large;
+     text-align: center;
+     font-weight: bolder;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-style: italic;
+     color: rgb(143, 19, 19);
+     text-shadow: 1px 5px black;
+}
+
+.relatos { width: 350px;
+           height: 200px;
+           padding: 5px;     
+           margin: 10px;
+           background-image:url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+           display: flex;
+           overflow: auto;
+           border: 5px groove purple;
+           border-radius: 10px;
+           box-shadow: 5px 5px 5px;
+                      
+        } 
+
+.relatos:hover { color: crimson;
+                 width: 370px;
+                 height: 220px;
+                 transition: 1s;
+
+}        
+
+p { color: aliceblue;
+    margin-bottom: 15px;
+         
+    }
+
+.relatos img { height: 65px;
+               width: 55px;              
+}
+
+footer { height: 200px;
+         background-color: black;
+         background-image: url("https://img.freepik.com/vector-gratis/fondo-halloween-lapidas-antiguas-cementerio-arboles-hojas-espeluznantes-luna-llena-cielo-nocturno-ilustracion-realista_1284-65419.jpg");
+         margin-bottom: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding-right: 30px;
+                      
+}   
+
+footer:hover { 
+               height: 400px;
+               transition: 3s;  
+}
+
+img { width: 10vw;
+      height: 19vh;
+               
+}     
+
+.calavera {    width: 130px;
+               height: 195px;
+}
+
+@media (max-width: 1108px) {
+    .cont { grid-template-columns: repeat(3, 1fr);}
+    .relatos { width: 240px;}
+}
+@media (max-width: 850px) {
+    .cont { grid-template-columns: 1fr 1fr;}
+    .relatos { width: 250px;}
+}
+@media (max-width:600px) {
+    .cont { grid-template-columns: 1fr;}
+}
+
+@media (max-height: 880px){
+    footer { height: 200px;}
+}
+
+@media (max-height: 500px){
+    footer { height: 50px;}
+}
+@media (max-height: 880px){
+    .calavera { height: 200px;}
+}
+@media (max-height: 500px){
+    .calavera { height: 50px;}
+}
+
